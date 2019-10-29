@@ -1,9 +1,61 @@
-@media only screeen and (min-width: 480px) {
-  
+.nav-top {
+  background-color: #000;
+  max-width: 100%;
+  overflow: auto;
+  height: 40px;
+  padding: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-
+.nav-top-left {
+  float: left;
 }
+
+.nav-top-right {
+  float: right;
+}
+
+.logo-wrap img {
+  width: 15%;
+  max-width: 100%;
+  height: auto;
+  background-color: tomato;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-top-left span, .nav-top-right span {
+  color: white;
+  margin-right: 5px;
+}
+
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px;
+}
+
+.head-wrap * {
+  margin-left: 5px;
+  margin-bottom: -12px;
+  color: gray;
+}
+
+img[alt="search"] {
+  margin-left: auto;
+  margin-top: 3px;
+  width: 2%;
+  height: 60%;
+  border-left: 1px solid gray;
+}
+
+
+
+@media only screeen and (min-width: 480px) {}
+
+@media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 1024px) {}
