@@ -52,7 +52,57 @@ img[alt="search"] {
   border-left: 1px solid gray;
 }
 
+.articles-top {
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  margin: 5px;
+}
 
+.top-article-relative {
+  position: relative;
+  width: 90%;
+}
+
+.top-article-relative * {
+  position: absolute;
+}
+
+.top-article-relative img{
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.head-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  top: 1px;
+}
+
+.date-rel {
+  color: #fff;
+  top: 5px;
+  right: 5px;
+}
+
+.author-rel {
+  color: #fff;
+  left: 10px;
+  bottom: 5px;
+}
+
+.hour-rel {
+  color: #fff;
+  left: 20%;
+  bottom: 5px;  
+}
+
+/* .top-article-tab {
+  width: 50%;
+  height: 40%;
+} */
 
 @media only screeen and (min-width: 480px) {}
 
