@@ -1,46 +1,92 @@
+.most-popular h6, .latest h6 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .latest-deals {
-  grid-column: 1 / -1;
+  display: grid;
+  grid-column: 1/-1;  
+}
+
+.latest-deals-header {
+  grid-column: 1/-1;
+}
+
+.latest-deals-entry {
+  display: grid;
+}
+
+.latest-deals-entry img, .latest-deals-entry p, .latest-deals-entry .prices {
+  width: 100%;
+}
+
+.latest-deals-entry p {
+  font-weight: bold;
+}
+
+.latest-deals-entry .prices {
+  display: inline-block;
+}
+
+.latest-deals-entry .prices div {
+  display: inline-block;
+}
+
+.latest-deals-entry .prices .full-price {
+  color: #AAA;
+  text-decoration: line-through;
+  grid-column: 1/2;
+}
+
+.latest-deals-entry .prices .deal-price {
+  grid-column:  2/3;
 }
 
 .lower-half {
   font-family: sans-serif;
 }
 
+.lower-half li::before {
+  content: '•';
+  color: red;
+}
+
 .most-popular {
   width: 368px;
   height: 276px;
+  color: #FFF;
 }
 
 .apps .most-popular {
-  background-image: url('images/most-popular/apps.png');
+  background-image: url('/images/most-popular/apps.png');
 }
 
 .gear .most-popular {
-  background-image: url('images/most-popular/gear.jpg');
+  background-image: url('/images/most-popular/gear.jpg');
 }
 
 .tech .most-popular {
-  background-image: url('images/most-popular/tech.jpg');
+  background-image: url('/images/most-popular/tech.jpg');
 }
 
 .creative .most-popular {
-  background-image: url('images/most-popular/creative.jpg');
+  background-image: url('/images/most-popular/creative.jpg');
 }
 
 .podium .most-popular {
-  background-image: url('images/most-popular/podium.png');
+  background-image: url('/images/most-popular/podium.png');
 }
 
 .insights .most-popular {
-  background-image: url('images/most-popular/insights.jpg');
+  background-image: url('/images/most-popular/insights.jpg');
 }
 
 .launch .most-popular {
-  background-image: url('images/most-popular/launch.jpg');
+  background-image: url('/images/most-popular/launch.jpg');
 }
 
 .distract .most-popular {
-  background-image: url('images/most-popular/distract.png');
+  background-image: url('/images/most-popular/distract.png');
 }
 
 .lower-half ul {
@@ -51,7 +97,7 @@
   margin-inline-end: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
-  text-align: center;
+  text-align: start;
 }
 
 .lower-half li {
@@ -86,6 +132,28 @@
   display: inline-block;
 }
 
+.latest-deals {
+  grid-template-columns: 1fr;
+}
+
+.latest-deals-entry {
+  grid-template-columns: 0.20fr 0.80fr;
+  grid-rows-template: 1fr 1fr;
+}
+
+.latest-deals-entry img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.latest-deals-entry p  {
+  grid-column: 2/-1;
+}
+
+.latest-deals-entry .prices {
+  grid-column: 2/-1;
+}
+
 @media only screen and (min-width: 480px) {
   .lower-half {
     display: grid;
@@ -98,11 +166,37 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .latest-deals {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .latest-deals-entry {
+    grid-template-columns: 1fr;
+    grid-rows-template: 1fr 1fr 1fr;
+  }
+
+  .latest-deals-entry img, .latest-deals-entry p, .latest-deals-entry .prices {
+    grid-column: 1/-1;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .lower-half {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .latest-deals {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .latest-deals-entry {
+    grid-template-columns: 1fr;
+    grid-rows-template: 1fr 1fr 1fr;
+  }
+  
+  .latest-deals-entry img, .latest-deals-entry p, .latest-deals-entry .prices {
+    grid-column: 1/-1;
   }
 }
