@@ -139,6 +139,15 @@ img[alt="menu"] {
   bottom: 5px;
 }
 
+.latest-news>h1 {
+  color: #f42;
+}
+
+.latest-article-tab {
+  width: 368px;
+  height: 276px;
+}
+
 @media only screen and (max-width: 768px) {
   .head-wrap {
     display: none;
