@@ -73,10 +73,12 @@ img[alt="menu"] {
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  cursor: pointer;
 }
 
 .head-left {
   width: 120%;
+  cursor: pointer;
 }
 
 .top-article-relative * {
@@ -109,8 +111,13 @@ img[alt="menu"] {
 .head-text {
   color: #fff;
   font-weight: bold;
-  bottom: 15px;
+  bottom: 25px;
   left: 10px;
+}
+
+.head-left-text {
+  left: 5%;
+  bottom: 50px;  
 }
 
 .head-text span {
@@ -125,13 +132,13 @@ img[alt="menu"] {
 
 .author-rel {
   color: #fff;
-  left: 10px;
+  left: 5%;  
   bottom: 5px;
 }
 
 .hour-rel {
   color: #fff;
-  left: 20%;
+  left: 30%;
   bottom: 5px;
 }
 
@@ -143,6 +150,10 @@ img[alt="menu"] {
 .latest-article-tab img {
   max-width: 100%;
   height: auto;
+}
+
+.latest-article-tab {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -157,11 +168,12 @@ img[alt="menu"] {
   img[alt="search"] {
     margin-left: auto;
     padding-left: 2px;
-    width: 8%;
+    width: 7%;
   }
   img[alt="menu"] {
     display: inline-block;
     margin: 0 15px;
+    width: 30px;
   }
   .articles-top {
     flex-direction: column;
