@@ -1,0 +1,108 @@
+.latest-deals {
+  grid-column: 1 / -1;
+}
+
+.lower-half {
+  font-family: sans-serif;
+}
+
+.most-popular {
+  width: 368px;
+  height: 276px;
+}
+
+.apps .most-popular {
+  background-image: url('images/most-popular/apps.png');
+}
+
+.gear .most-popular {
+  background-image: url('images/most-popular/gear.jpg');
+}
+
+.tech .most-popular {
+  background-image: url('images/most-popular/tech.jpg');
+}
+
+.creative .most-popular {
+  background-image: url('images/most-popular/creative.jpg');
+}
+
+.podium .most-popular {
+  background-image: url('images/most-popular/podium.png');
+}
+
+.insights .most-popular {
+  background-image: url('images/most-popular/insights.jpg');
+}
+
+.launch .most-popular {
+  background-image: url('images/most-popular/launch.jpg');
+}
+
+.distract .most-popular {
+  background-image: url('images/most-popular/distract.png');
+}
+
+.lower-half ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  text-align: center;
+}
+
+.lower-half li {
+  display: inline-block;
+}
+
+.lower-half h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+.page-footer ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  text-align: center;
+}
+
+.page-footer li {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 480px) {
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
