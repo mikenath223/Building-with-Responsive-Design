@@ -179,7 +179,5 @@ img[alt="menu"] {
 }
 
 @media only screen and (max-width: 1024px) {
-  .nav-top {
-    display: none;
-  }
+
 }
