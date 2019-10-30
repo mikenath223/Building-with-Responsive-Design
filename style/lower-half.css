@@ -3,6 +3,12 @@
   font-weight: bold;
 }
 
+.lower-half > section > h6 {
+  color: darkorange;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .latest-deals {
   display: grid;
   grid-column: 1/-1;  
@@ -14,6 +20,20 @@
 
 .latest-deals-entry {
   display: grid;
+}
+
+.latest-deals h6, .latest-deals a {
+  display: inline-block;
+}
+
+.latest-deals h6 {
+  align-self: start;
+  justify-self: end;
+}
+
+.latest-deals a {
+  align-self: end;
+  justify-self: end;
 }
 
 .latest-deals-entry img, .latest-deals-entry p, .latest-deals-entry .prices {
