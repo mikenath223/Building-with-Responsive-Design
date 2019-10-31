@@ -1,5 +1,14 @@
+header {
+  position: fixed;
+  background-color: #fff;
+  margin-top: -40px;
+  width: 100%;
+  margin-bottom: -40px;
+}
+
 .nav-top {
-  display: none;
+  z-index: 99;
+  margin-bottom: 40px;
 }
 
 .nav-top-left {
