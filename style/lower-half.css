@@ -204,6 +204,29 @@
     margin-left: 15px;
     cursor: pointer;
   }
+  
+  .funding-rounds {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    height: max-content;
+    margin: 0 auto;
+  }
+
+  .funding-rounds-tab {
+    display: flex;
+    height: 180px;
+    flex-flow: column nowrap;
+  }
+
+.funding-rounds .funding-rounds-tab .tab-img {
+    max-width: 20%;
+  }
+
+  .funding-rounds-tab:last-child {
+    display: none;
+  }
+
   .lower-half {
     display: grid;
     grid-template-columns: 1fr;
@@ -213,7 +236,7 @@
 @media only screen and (min-width: 768px) {
   .nav-top {
     display: none;
-  }  
+  } 
   .latest-news-header,
   .funding-header {
     margin: 25px;
@@ -246,6 +269,16 @@
     align-items: center;
   }
 
+  .funding-rounds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .funding-rounds-tab:last-child {
+    display: none;
+  }
 
   .lower-half {
     display: grid;

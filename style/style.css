@@ -173,17 +173,20 @@ img[alt="menu"] {
   position: absolute;
   top: 1%;
   left: 1%;
+  grid-area: tab-img;
 }
 
 .funding-rounds-tab-1 {
   width: 100%;
   background-color: #f42;
   padding: 5% 40%;
+  height: 20%;
 }
 
 .funding-rounds-tab-2 {
   width: 100%;
   padding: 5% 40%;
+  height: 20%;
 }
 
 .latest-article-tab {
