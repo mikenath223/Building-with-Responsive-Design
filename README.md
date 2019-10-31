@@ -17,7 +17,7 @@ This project is about creating a web page that follows the principles of _respon
 
 ### LIVE VERSION
 
-(https://raw.githack.com/mikenath223/Building-with-Responsive-Design/feature-branch/index.html)
+(https://rawcdn.githack.com/mikenath223/Building-with-Responsive-Design/3f3f3ff41eeb6ff38a9793b34eaef830c703b323/index.html)
 
 ### SCREENSHOTS
 
