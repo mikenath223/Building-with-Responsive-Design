@@ -38,6 +38,7 @@
 
 .latest-deals-entry {
   display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
   margin: 1em;
 }
 
@@ -57,13 +58,15 @@
 }
 
 .latest-deals-entry p {
-  grid-column: 2/-1;
+  grid-column: 2/3;
+  grid-row: 1/2;
   font-weight: bold;
 }
 
 .latest-deals-entry .prices {
   display: inline-block;
-  grid-column: 2/-1;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .latest-deals-entry .prices div {
@@ -310,13 +313,14 @@
 
   .latest-deals-entry {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 
   .latest-deals-entry img,
   .latest-deals-entry p,
   .latest-deals-entry .prices {
-    grid-column: 1/-1;
+    grid-column: 1/2;
+    grid-row: span 1;
   }
 }
 
@@ -387,12 +391,13 @@
 
   .latest-deals-entry {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 
   .latest-deals-entry img,
   .latest-deals-entry p,
   .latest-deals-entry .prices {
-    grid-column: 1/-1;
+    grid-column: 1/2;
+    grid-row: span 1;
   }
 }
