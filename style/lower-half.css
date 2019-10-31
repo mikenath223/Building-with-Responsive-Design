@@ -209,13 +209,11 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     width: 95%;
-    height: max-content;
     margin: 0 auto;
   }
 
   .funding-rounds-tab {
     display: flex;
-    height: 180px;
     flex-flow: column nowrap;
   }
 
@@ -271,7 +269,7 @@
 
   .funding-rounds {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: 1fr/repeat(3, 1fr);
     width: 95%;
     margin: 0 auto;
   }
@@ -337,14 +335,15 @@
   }
   .funding-rounds {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template: 1fr/repeat(4, 1fr);
     width: 95%;
     margin: 0 auto;
   }
 
-  .funding-rounds-tab {
-    
+  .funding-rounds-tab:last-child {
+    display: block;
   }
+
   .lower-half {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
