@@ -235,7 +235,7 @@
     display: none;
   }
 
-  
+
   .latest-article-tab {
     display: grid;
     grid-template: "image article" 1fr "image article" 1fr /3fr 10fr;
@@ -282,7 +282,8 @@
   }
 
   .page-footer li {
-    display: block;
+    display: inline-block;
+    margin: 1em;
   }
 
   .social-icons {
@@ -304,25 +305,32 @@
     height: 40px;
     padding: 10px;
   }
+
   .nav-top-left {
     margin-left: 170px;
   }
+
   header {
     position: relative;
   }
+
   .head-wrap {
     margin-left: 170px;
   }
+
   .logo-wrap {
     position: absolute;
     top: 5px;
   }
+
   .logo-wrap img[alt="logo"] {
     height: 80px;
   }
+
   .head-nav .menu {
     display: none;
   }
+
   .latest-news-header,
   .funding-header {
     margin: 25px;
@@ -395,12 +403,15 @@
   .head-nav .menu {
     display: none;
   }
+
   .nav-top-left {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   .head-wrap {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   .nav-top {
     display: block;
     background-color: #000;
