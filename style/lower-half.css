@@ -5,6 +5,12 @@
   height: 180px;
 }
 
+.lower-half > section > h6 {
+  color: darkorange;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .page-footer p {
   height: 120px;
   background-color: #000;
@@ -20,6 +26,10 @@
 .most-popular h6, .latest h6 {
   font-size: 1.4em;
   font-weight: bold;
+}
+
+.lower-half > section {
+  margin: 1em;
 }
 
 .lower-half>section>h6 {
@@ -94,6 +104,10 @@
   width: 368px;
   height: 276px;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 
 .apps .most-popular {
@@ -178,6 +192,7 @@
 .latest-deals-entry {
   grid-template-columns: 0.20fr 0.80fr;
   grid-template-rows: 1fr 1fr;
+  margin: 1em;
 }
 
 .latest-deals-entry img {
