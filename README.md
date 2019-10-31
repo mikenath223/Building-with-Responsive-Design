@@ -24,3 +24,5 @@ This project is about creating a web page that follows the principles of _respon
 ![screenshot #1](images/screenshots/001.png)
 ![screenshot #2](images/screenshots/002.png)
 ![screenshot #3](images/screenshots/003.png)
+![screenshot #4](images/screenshots/004.png)
+![screenshot #5](images/screenshots/005.png)
