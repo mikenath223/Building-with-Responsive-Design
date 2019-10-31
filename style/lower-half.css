@@ -16,10 +16,38 @@
   height: auto;
 }
 
-.most-popular > h6,
-.latest > h6 {
-  font-size: 1.4em;
+.lower-half .most-popular > h6,
+.latest div > h6 {
+  font-size: 1em;
   font-weight: bold;
+  margin: 10px;
+}
+
+.latest div * {
+  color: #f42;
+}
+
+.latest img {
+  max-width: 100%;
+  height: auto;
+}
+
+.most-popular p {
+  font-weight: bold;
+  margin: 10px;
+}
+
+
+.most-popular small {
+  color: rgb(155, 144, 144);
+  margin: 10px;
+  font-weight: bold;
+}
+
+.latest {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  margin-bottom: 5px;
 }
 
 .lower-half > section {
@@ -86,7 +114,7 @@
 
 .lower-half li::before {
   content: '•';
-  color: red;
+  color: #f42;
 }
 
 .most-popular {
@@ -100,34 +128,42 @@
 }
 
 .apps .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/apps.png');
 }
 
 .gear .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/gear.jpg');
 }
 
 .tech .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/tech.jpg');
 }
 
 .creative .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/creative.jpg');
 }
 
 .podium .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/podium.png');
 }
 
 .insights .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/insights.jpg');
 }
 
 .launch .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/launch.jpg');
 }
 
 .distract .most-popular {
+  width: 100%;
   background-image: url('../images/most-popular/distract.png');
 }
 
@@ -144,6 +180,9 @@
 
 .lower-half li {
   display: inline-block;
+  font-size: 14px;
+  margin: 3px;
+  color: gray;
 }
 
 .lower-half h6 {
@@ -176,12 +215,12 @@
   grid-row: 1/3;
 }
 
-.lower-half > section > h6 {
-  color: darkorange;
-  font-size: 1.4em;
+.lower-half > section > h1 {
+  color: #f42;
   font-weight: bold;
+  font-size: 28px;
   margin: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (min-width: 480px) {
