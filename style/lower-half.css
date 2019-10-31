@@ -132,42 +132,42 @@
 
 .apps .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/apps.png');
+  background: url('../images/most-popular/apps.png') center/100% no-repeat;
 }
 
 .gear .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/gear.jpg');
+  background: url('../images/most-popular/gear.jpg') center/100% no-repeat;
 }
 
 .tech .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/tech.jpg');
+  background: url('../images/most-popular/tech.jpg') center/100% no-repeat;
 }
 
 .creative .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/creative.jpg');
+  background: url('../images/most-popular/creative.jpg') center/100% no-repeat;
 }
 
 .podium .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/podium.png');
+  background: url('../images/most-popular/podium.png') center/100% no-repeat;
 }
 
 .insights .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/insights.jpg');
+  background: url('../images/most-popular/insights.jpg') center/100% no-repeat;
 }
 
 .launch .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/launch.jpg');
+  background: url('../images/most-popular/launch.jpg') center/100% no-repeat;
 }
 
 .distract .most-popular {
   width: 100%;
-  background-image: url('../images/most-popular/distract.png');
+  background: url('../images/most-popular/distract.png') center/100% no-repeat;
 }
 
 .lower-half ul {
