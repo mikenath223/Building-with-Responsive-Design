@@ -304,16 +304,20 @@
     height: 40px;
     padding: 10px;
   }
+  
   .nav-top-left {
     font-size: 12px;
     margin-left: 160px;
   }
-   .nav-top-right {
+  
+  .nav-top-right {
     font-size: 12px;
   }
+  
   header {
     position: relative;
   }
+  
   .head-wrap {
     margin-left: 170px;
   }
