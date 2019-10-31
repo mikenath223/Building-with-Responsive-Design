@@ -1,8 +1,7 @@
 .page-footer {
   background-color: rgba(0, 0, 0, 0.92);
   color: #ddd;
-  margin: 20px 0;
-  height: 180px;
+  margin-top: 20px;
 }
 
 .lower-half > section > h6 {
@@ -15,7 +14,6 @@
   height: 120px;
   background-color: #000;
   padding-top: 50px;
-  margin-top: 20px;
 }
 
 .social-icons {
