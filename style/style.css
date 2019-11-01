@@ -1,0 +1,267 @@
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.nav-top-left {
+  float: left;
+}
+
+.nav-top-right {
+  float: right;
+}
+
+.logo-wrap img {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  background-color: #f12f46;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-top-left span,
+.nav-top-right span {
+  color: white;
+  margin-right: 5px;
+}
+
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px;
+}
+
+.head-wrap * {
+  margin-left: 5px;
+  margin-bottom: -12px;
+  color: gray;
+}
+
+.head-wrap {
+  padding-top: 10px;
+}
+
+.menu {
+  display: inline-block;
+  font-size: 26px;
+  margin: 5px 15px;
+  color: #f42;
+}
+
+.head-nav .search {
+  width: 2%;
+  height: 60%;
+  margin: 8px 16px 0 auto;
+  padding-left: 8px;
+  padding-top: 3px;
+  color: #f42;
+  border-left: 1px solid gray;
+}
+
+.articles-top {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 450px;
+  margin: 5px;
+}
+
+.top-article-relative,
+.top-article-tab {
+  position: relative;
+}
+
+.top-article-tab {
+  margin-left: 15px;
+}
+
+.head-right {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  cursor: pointer;
+}
+
+.head-left {
+  width: 120%;
+  cursor: pointer;
+}
+
+.top-article-relative * {
+  position: absolute;
+}
+
+.top-article-tab * {
+  position: absolute;
+}
+
+.tab-img {
+  position: static;
+  width: 100%;
+  height: 220px;
+}
+
+.top-article-relative img[alt="blockchain"] {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-article {
+  left: 10%;
+  top: 15px;
+  width: 80%;
+  height: 40%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: 0.5s none;
+  background-color: rgba(0, 0, 0, 0.336);
+  overflow: hidden;
+}
+
+.top-article-tab:hover .overlay,
+.head-left:hover .overlay {
+  opacity: 0.5;
+}
+
+.most-popular {
+  position: relative;
+}
+
+.head-text {
+  color: #fff;
+  font-weight: bold;
+  bottom: 25px;
+  left: 10px;
+}
+
+.head-left-text {
+  left: 5%;
+  bottom: 50px;
+}
+
+.head-text span {
+  margin-top: -45px;
+}
+
+.date-rel {
+  color: #fff;
+  top: 5px;
+  right: 5px;
+}
+
+.author-rel {
+  color: #fff;
+  left: 5%;
+  bottom: 5px;
+}
+
+.hour-rel {
+  color: #fff;
+  left: 30%;
+  bottom: 5px;
+}
+
+.latest-news-header,
+.funding-header * {
+  color: #f42;
+}
+
+.latest-article-tab img,
+.funding-rounds-tab img {
+  max-width: 100%;
+  height: auto;
+}
+
+.funding-rounds-tab {
+  position: relative;
+  height: 250px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.funding-rounds-tab .tab-img {
+  max-width: 30%;
+  height: auto;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  grid-area: tab-img;
+}
+
+.funding-rounds-tab-1 {
+  width: 100%;
+  background-color: #f42;
+  padding: 5% 40%;
+  height: 20%;
+}
+
+.funding-rounds-tab-2 {
+  width: 100%;
+  padding: 5% 40%;
+  height: 20%;
+}
+
+.latest-article-tab {
+  cursor: pointer;
+}
+
+.latest-article-author {
+  margin: 10px auto 0 0;
+}
+
+.author-latest {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 868px) {
+  .head-wrap {
+    display: none;
+    width: 50%;
+  }
+
+  img[alt="logo"] {
+    max-width: 100%;
+    width: 50%;
+  }
+
+  .articles-top {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .head-left {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .hour-rel {
+    left: 30%;
+  }
+
+  .top-article-tab img,
+  .top-article-relative img[alt="blockchain"] {
+    max-width: 100%;
+    height: 170px;
+  }
+}

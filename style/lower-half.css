@@ -1,0 +1,526 @@
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.92);
+  color: #ddd;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-footer p {
+  height: 120px;
+  background-color: #000;
+  padding-top: 50px;
+}
+
+.social-icons {
+  max-width: 25%;
+  height: auto;
+}
+
+.latest div * {
+  color: #f42;
+}
+
+.latest img {
+  max-width: 100%;
+  height: auto;
+}
+
+.most-popular p {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.most-popular small {
+  color: rgb(240, 233, 233);
+  margin: 10px;
+  font-weight: bold;
+}
+
+.latest {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  margin-bottom: 5px;
+}
+
+.lower-half > section {
+  margin: 1em;
+}
+
+.latest-deals {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr;
+}
+
+.latest-deals-header {
+  grid-column: 1/-1;
+}
+
+.latest-deals-entry {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  margin: 1em;
+}
+
+.latest-deals h6,
+.latest-deals a {
+  display: inline-block;
+}
+
+.latest-deals h6 {
+  align-self: start;
+  justify-self: end;
+}
+
+.latest-deals a {
+  align-self: end;
+  justify-self: end;
+}
+
+.latest-deals-entry p {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-weight: bold;
+}
+
+.latest-deals-entry .prices {
+  display: inline-block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.latest-deals-entry .prices div {
+  display: inline-block;
+}
+
+.lower-half h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.latest-deals-entry .prices .full-price {
+  color: #aaa;
+  text-decoration: line-through;
+  grid-column: 1/2;
+}
+
+.latest-deals-entry .prices .deal-price {
+  grid-column: 2/3;
+}
+
+.lower-half {
+  font-family: sans-serif;
+}
+
+.lower-half li::before {
+  content: '•';
+  color: #f42;
+}
+
+.most-popular {
+  width: 368px;
+  height: 276px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+.apps .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/apps.png') center/100% no-repeat;
+}
+
+.gear .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/gear.jpg') center/100% no-repeat;
+}
+
+.tech .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/tech.jpg') center/100% no-repeat;
+}
+
+.creative .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/creative.jpg') center/100% no-repeat;
+}
+
+.podium .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/podium.png') center/100% no-repeat;
+}
+
+.insights .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/insights.jpg') center/100% no-repeat;
+}
+
+.launch .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/launch.jpg') center/100% no-repeat;
+}
+
+.distract .most-popular {
+  width: 100%;
+  background: url('../images/most-popular/distract.png') center/100% no-repeat;
+}
+
+.lower-half ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  text-align: start;
+}
+
+.lower-half li {
+  display: inline-block;
+  font-size: 14px;
+  margin: 3px;
+  color: gray;
+}
+
+.page-footer ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  text-align: center;
+}
+
+.page-footer li {
+  display: inline-block;
+}
+
+.latest-deals-entry img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.latest div > h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.lower-half > section > h2 {
+  color: #f42;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.lower-half .most-popular > h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.head-left .logo-article {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 480px) {
+  .nav-top {
+    display: none;
+  }
+
+  .head-text {
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+
+  .head-left .logo-article {
+    visibility: hidden;
+    width: 30%;
+    left: 10%;
+  }
+
+  .latest-article-tab {
+    display: grid;
+    grid-template: "image article" 1fr "image article" 1fr /3fr 10fr;
+    align-items: center;
+    grid-column-gap: 10px;
+    width: 95%;
+    height: 100px;
+    margin: 5px auto;
+  }
+
+  .latest-article-tab img {
+    grid-area: image;
+  }
+
+  .latest-news-header,
+  .funding-header {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .funding-rounds {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .funding-rounds-tab {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .funding-rounds .funding-rounds-tab .tab-img {
+    max-width: 20%;
+  }
+
+  .funding-rounds-tab:last-child {
+    display: none;
+  }
+
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .page-footer li {
+    display: inline-block;
+    margin: 1em;
+  }
+
+  .social-icons {
+    max-width: 55%;
+    height: auto;
+  }
+
+  .page-footer p {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .head-left .logo-article {
+    visibility: hidden;
+  }
+
+  .nav-top {
+    display: block;
+    background-color: #000;
+    max-width: 100%;
+    overflow: hidden;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .nav-top-left {
+    font-size: 12px;
+    margin-left: 160px;
+  }
+
+  .nav-top-right {
+    font-size: 12px;
+  }
+
+  .head-text {
+    font-weight: bold;
+    font-size: 1.55em;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .head-wrap {
+    margin-left: 170px;
+  }
+
+  .logo-wrap {
+    position: absolute;
+    top: 5px;
+  }
+
+  .logo-wrap img[alt="logo"] {
+    height: 80px;
+  }
+
+  .head-nav .menu {
+    display: none;
+  }
+
+  .latest-news-header,
+  .funding-header {
+    margin: 25px;
+    cursor: pointer;
+  }
+
+  .latest-news {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    margin: 0 auto;
+    width: 95%;
+    height: max-content;
+  }
+
+  .latest-article-tab {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: space-around;
+    margin: 5px;
+    width: auto;
+    height: 260px;
+  }
+
+  .funding-header {
+    display: block;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .funding-header-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .funding-rounds {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .funding-rounds-tab:last-child {
+    display: none;
+  }
+
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .latest-deals {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .latest-deals-entry {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .latest-deals-entry img,
+  .latest-deals-entry p,
+  .latest-deals-entry .prices {
+    grid-column: 1/2;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .head-nav .menu {
+    display: none;
+  }
+
+  .head-left .logo-article {
+    visibility: visible;
+  }
+
+  .nav-top-left {
+    margin-left: 0;
+  }
+
+  .head-wrap {
+    margin-left: 0;
+  }
+
+  .nav-top {
+    display: block;
+    background-color: #000;
+    max-width: 100%;
+    overflow: hidden;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .logo-wrap {
+    display: none;
+  }
+
+  .latest-news-header,
+  .funding-header {
+    margin: 10px 25px;
+    width: 95%;
+    cursor: pointer;
+  }
+
+  .latest-news {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    height: max-content;
+    width: 95%;
+  }
+
+  .latest-article-tab {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: space-around;
+    margin: 5px;
+    width: auto;
+    height: 260px;
+  }
+
+  .funding-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .funding-header-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .funding-rounds {
+    display: grid;
+    grid-template: 1fr/repeat(4, 1fr);
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .funding-rounds-tab:last-child {
+    display: block;
+  }
+
+  .lower-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .latest-deals {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .latest-deals-entry {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .latest-deals-entry img,
+  .latest-deals-entry p,
+  .latest-deals-entry .prices {
+    grid-column: 1/2;
+    grid-row: span 1;
+  }
+}
