@@ -22,7 +22,7 @@ main {
   max-width: 100%;
   width: 50%;
   height: auto;
-  background-color: #F12F46;
+  background-color: #f12f46;
 }
 
 a {
@@ -134,12 +134,13 @@ a {
   left: 0;
   right: 0;
   opacity: 1;
-  transition: .5s none;
+  transition: 0.5s none;
   background-color: rgba(0, 0, 0, 0.336);
   overflow: hidden;
 }
 
-.top-article-tab:hover .overlay, .head-left:hover .overlay {
+.top-article-tab:hover .overlay,
+.head-left:hover .overlay {
   opacity: 0.5;
 }
 
