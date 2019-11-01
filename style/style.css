@@ -22,7 +22,7 @@ main {
   max-width: 100%;
   width: 50%;
   height: auto;
-  background-color: tomato;
+  background-color: #F12F46;
 }
 
 a {
@@ -120,10 +120,31 @@ a {
 }
 
 .logo-article {
-  left: 1px;
+  left: 10%;
   top: 15px;
   width: 80%;
   height: 40%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: .5s none;
+  background-color: rgba(0, 0, 0, 0.336);
+  overflow: hidden;
+}
+
+.top-article-tab:hover .overlay, .head-left:hover .overlay {
+  opacity: 0.5;
+}
+
+.most-popular {
+  position: relative;
 }
 
 .head-text {

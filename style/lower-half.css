@@ -31,7 +31,7 @@
 }
 
 .most-popular small {
-  color: rgb(155, 144, 144);
+  color: rgb(240, 233, 233);
   margin: 10px;
   font-weight: bold;
 }
@@ -235,6 +235,16 @@
     display: none;
   }
 
+  .head-text {
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+
+  .head-left .logo-article {
+    width: 30%;
+    left: 10%;
+  }
+
   .latest-article-tab {
     display: grid;
     grid-template: "image article" 1fr "image article" 1fr /3fr 10fr;
@@ -312,6 +322,16 @@
 
   .nav-top-right {
     font-size: 12px;
+  }
+
+  .head-text {
+    font-weight: bold;
+    font-size: 1.55em;
+  }
+
+  .head-left .logo-article {
+    width: 70%;
+    left: 10%;
   }
 
   header {
