@@ -330,8 +330,7 @@
   }
 
   .head-left .logo-article {
-    width: 70%;
-    left: 10%;
+    display: none;
   }
 
   header {
